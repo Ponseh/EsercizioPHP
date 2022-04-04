@@ -8,7 +8,7 @@
 
 
             if(isset($_POST["no"])){
-                header("Location: deleteTeacher.html");
+                header("Location: ..\index.html");
             } else if(isset($_POST["yes"])){
                 header("Location: deleteTeacher.php");
             } else {
