@@ -3,11 +3,12 @@
 
     $stmt = $conn->prepare('SELECT nomeclasse FROM tclassi WHERE speclasse=?');
     $stmt->bind_param("s", $_POST['Specializzazione']);
-    $result = $stmt->execute();
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     $arrayRes = array();
 
-    if ($result->num_rows > 0) {
+    if (!($result->num_rows === 0)) {
         $i=0;
         while($row = $result->fetch_assoc()) {
             $arrayRes[$i] = $row;
@@ -15,6 +16,5 @@
         }
     }
 
-
-
+    print_r($arrayRes);
 ?>
