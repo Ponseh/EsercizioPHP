@@ -9,9 +9,9 @@
 
             if(isset($_POST["no"])){
                 header("Location: deleteTeacher.html");
-            }else if(isset($_POST["yes"])){
+            } else if(isset($_POST["yes"])){
                 header("Location: deleteTeacher.php");
-            }else{
+            } else {
                 $_SESSION['Nome_Insegnante'] = $_POST['Nome_Insegnante'];
                 $_SESSION['Cognome_Insegnante'] = $_POST['Cognome_Insegnante'];
             }
