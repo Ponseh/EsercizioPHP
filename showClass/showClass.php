@@ -16,5 +16,8 @@
         }
     }
 
-    print_r($arrayRes);
+    foreach ($arrayRes as $key => $value) {
+        echo "<a href=\"showTeacher.php?nomeClasse={$value['nomeclasse']}\">{$value['nomeclasse']}</a>";
+        echo "<br>";
+    }
 ?>
