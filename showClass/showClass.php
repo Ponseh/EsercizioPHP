@@ -5,5 +5,16 @@
     $stmt->bind_param("s", $_POST['Specializzazione']);
     $result = $stmt->execute();
 
-    $arrayRes = $result->fetch_assoc();
+    $arrayRes = array();
+
+    if ($result->num_rows > 0) {
+        $i=0;
+        while($row = $result->fetch_assoc()) {
+            $arrayRes[$i] = $row;
+            $i++;
+        }
+    }
+
+
+
 ?>
