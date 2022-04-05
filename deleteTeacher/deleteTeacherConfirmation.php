@@ -20,8 +20,8 @@
     <body>
         <h1 style="color:red;">Sei sicuro?</h1>
         <form method="POST">
-            <input type="submit" name="no" value="No">
             <input type="submit" name="yes" value="Sì">
+            <input type="submit" name="no" value="No">
         </form>
     </body>
 </html>
