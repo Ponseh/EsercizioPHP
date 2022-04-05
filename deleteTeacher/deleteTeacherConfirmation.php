@@ -6,7 +6,6 @@
         <?php
             session_start();
 
-
             if(isset($_POST["no"])){
                 header("Location: ..\index.html");
             } else if(isset($_POST["yes"])){
