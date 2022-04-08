@@ -23,6 +23,6 @@
 
     echo "<br>";
     echo "<a href=\"..\index.html\">Torna alla home</a>";
-    
+
     $stmt->close();
 ?>
