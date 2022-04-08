@@ -20,6 +20,9 @@
         echo "professore {$value['nomeins']} {$value['cognomeins']} insegna {$value['numore']} ore";
         echo "<br>";
     }
+
     echo "<br>";
     echo "<a href=\"..\index.html\">Torna alla home</a>";
+    
+    $stmt->close();
 ?>

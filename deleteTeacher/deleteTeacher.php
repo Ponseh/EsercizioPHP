@@ -12,5 +12,7 @@
     $stmt->bind_param("ss", $_SESSION['Cognome_Insegnante'], $_SESSION['Nome_Insegnante']);
     $stmt->execute();
 
+    $stmt->close();
+
     header('Location: ..\index.html');
 ?>

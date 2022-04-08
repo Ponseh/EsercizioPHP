@@ -5,5 +5,7 @@
     $stmt->bind_param("ssis", $_POST['Nome_Classe'], $_POST['Specializzazione_Classe'], $_POST['Piano'], $_POST['Ala']);
     $stmt->execute();
 
+    $stmt->close();
+    
     header('Location: ..\index.html');
 ?>
