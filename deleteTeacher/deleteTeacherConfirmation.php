@@ -10,6 +10,7 @@
         $_SESSION['Cognome_Insegnante'] = $_POST['Cognome_Insegnante'];
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
     <head>
